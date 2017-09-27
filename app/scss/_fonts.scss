@@ -1,0 +1,32 @@
+@import '_var.scss';
+/* font-family: "OpenSansRegular"; */
+@font-face {
+	font-family: "OpenSansRegular";
+	src: url("../fonts/OpenSansRegular/OpenSansRegular.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/OpenSansRegular/OpenSansRegular.woff") format("woff"),
+	url("../fonts/OpenSansRegular/OpenSansRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "OpenSansSemiBold";
+	src: url("../fonts/OpenSansSemiBold/OpenSansSemiBold.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/OpenSansSemiBold/OpenSansSemiBold.woff") format("woff"),
+	url("../fonts/OpenSansSemiBold/OpenSansSemiBold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "OpenSansLight";
+	src: url("../fonts/OpenSansLight/OpenSansLight?#iefix")format("embedded-opentype"),
+	url("../fonts/OpenSansLight/OpenSansLight.woff") format("woff"),
+	url("../fonts/OpenSansLight/OpenSansLight.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+
+
+

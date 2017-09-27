@@ -1,0 +1,140 @@
+@import '_var.scss';
+
+.header-fon {
+background:  url('../images/header-pic.jpg') center center no-repeat;
+min-height:700px;
+/* background-attachment: fixed; */
+-webkit-background-size:cover;
+-moz-background-size: cover;
+-ms-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+position: relative;
+}
+.header-fon:before {
+content: '';
+position: absolute;
+background-color: rgba(#000000, .29);
+width: 100%;
+height: 100%;
+top:0;
+left:0;
+}
+
+.top-line {
+  width: 100%;
+  background-color:  rgba(#fff, 1.00);
+  height: 80px;
+  z-index: 1;
+  position: relative;
+}
+
+.top-line_logo, .top-line_box  {
+  float: left;
+}
+
+.top-line_box {
+  float: right;
+}
+
+.top-line_logo {
+  width: 211px;
+}
+
+.top-line_logo img {
+  width: 211px;
+  height: 100%;
+}
+
+.top-line_menu, .top-line_buttom {
+  float: left;
+}
+
+.top-line_buttom, .top-line_logo {
+  margin-top: 18px;
+}
+
+.top-line_buttom a {
+display: inline-block;
+padding: 0 15px;
+text-align: center;
+line-height: 44px;
+height: 44px;
+background-color: $color-buttom;
+border-radius: 10px;
+color: #fff;
+text-decoration: none;
+@include font-size(20px);
+}
+.mobile_menu {
+  width: 20px;
+  height: 20px;
+display: none;
+
+}
+.top-line_menu ul {
+list-style-type: none;
+margin-right: 10px;
+margin-top: 22px;
+}
+
+.top-line_menu ul li {
+display: inline-block;
+}
+
+.top-line_menu ul li a {
+padding: 10px 15px;
+display: block;
+cursor: pointer;
+text-decoration: none;
+text-transform: uppercase;
+@include font-size(13px);
+color:$link-menu-color;
+}
+
+.header-content {
+margin: 10% auto 0;
+width: 60%;
+position: relative;
+}
+
+.header-content h1 {
+color:#ffffff;
+font-weight: bold;
+font-family: "OpenSansSemiBold", sans-serif;
+@include font-size(34px);
+line-height: 2.2;
+text-align: center;
+}
+
+.header-content h1 span {
+display: block;
+font-family: "OpenSansLight", sans-serif;
+}
+
+.header-content_buton {
+margin: 50px auto 0;
+}
+
+.header-content_buton a {
+display: block;
+background-color: $color-buttom;
+width: 250px;
+height: 76px;
+line-height: 76px;
+margin: 0 auto;
+color:#fff;
+text-align: center;
+border-radius: 10px;
+text-decoration: none;
+@include trans;
+}
+
+.header-content_buton a:hover {
+background-color: darken($color-buttom, 10%);
+}
+
+.wrapper {
+width: 1170px;
+margin: 0 auto;
+}

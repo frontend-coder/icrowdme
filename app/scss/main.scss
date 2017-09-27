@@ -1,0 +1,72 @@
+@import '_var.scss';
+*::-webkit-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*::-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-ms-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0; }
+
+html{margin:0;
+	padding:0;
+	font-size: 16px;
+	line-height: 1.3;
+	-webkit-backface-visibility:hidden;
+}
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+
+}
+body input:required:valid,
+body textarea:required:valid {
+
+}
+
+.hidden {
+	display: none;
+}
+// стили оформления хедера сайта
+
+@import '_fonts.scss';
+@import '_var.scss';
+@import '_header.scss';
+@import '_allstyle.scss';
+// @import '_vseforms.scss';
+@import '_madia.scss';
+
+body {
+	font-family: "OpenSansRegular", sans-serif;
+font-size: 16px;
+line-height: 1.3;
+position: relative;
+color: #666;
+-webkit-backface-visibility:hidden;
+overflow-x: hidden;
+-webkit-font-smoothing:antialised;
+}
+h2 {
+@include font-size(26px);
+line-height: 1.3;
+text-transform: uppercase;
+}

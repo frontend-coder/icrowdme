@@ -1,0 +1,110 @@
+$color-buttom:#bcda5c;
+
+//    $color-buttom;
+
+$link-menu-color:#989898;
+
+// $link-menu-color;
+
+$color-text :#515151;
+
+// $color-text
+
+
+$green-color-aksent: #7cc15a;
+$orange-color-aksent: #efa448;
+
+$color-pocture-labers:#26a6d1;
+
+
+
+$color-blog:#f9f9f9;
+
+
+
+
+$button-zakaz:#e83636;
+$button-zakazhover:#f64429;
+
+$color-h2:#333333;
+// $color-h2
+$color-descr:#999999;
+
+//   $color-descr
+
+
+
+@mixin trans {
+-moz-transition: all 0.2s ease;
+-webkit-transition: all 0.2s ease;
+transition: all 0.2s ease;
+}
+
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+  // font-size: $size;
+  font-size: calculateRem($size);
+}
+
+// как использовать
+// p {
+//   @include font-size(20px);
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// @mixin fluid-ratio($large-size) {
+//   $width-large: nth($large-size, 1);
+//   // $width-small: nth($small-size, 1);
+//   $height-large: nth($large-size, 2);
+//   // $height-small: nth($small-size, 2);
+//   $slope: ($height-large) / ($width-large);
+//   $height: $height-large - $width-large * $slope;
+
+//   padding-top: $slope * 100%;
+//   height: $height;
+
+//   background-size: cover;
+//   -moz-background-size: cover;  /* Firefox 3.6 */
+//   background-position: center;  /* Internet Explorer 7/8 */
+// }
+/*все переменные и моды */
+// $link: #15157d;
+// $link_bottom: $link;
+
+  // width: $block_width - ( 5px * 2 ) - ( 1px * 2 );
+
+// как сделать миксинг
+// @mixin large-text {
+//   font: {
+//     family: Arial;
+//     size: 20px;
+//     weight: bold;
+//   }
+//   color: #ff0000;
+// }
+
+// как использовать миксинг
+// .page-title {
+//   @include large-text;
+//   padding: 4px;
+//   margin-top: 10px;
+// }
+
