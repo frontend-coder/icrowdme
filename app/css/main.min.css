@@ -119,11 +119,6 @@ html {
   text-decoration: none;
   font-size: 1.25rem; }
 
-.mobile_menu {
-  width: 20px;
-  height: 20px;
-  display: none; }
-
 .top-line_menu ul {
   list-style-type: none;
   margin-right: 10px;
@@ -180,9 +175,44 @@ html {
 .header-content_buton a:hover {
   background-color: #abd132; }
 
-.wrapper {
-  width: 1170px;
-  margin: 0 auto; }
+.mobile_menu {
+  display: none;
+  width: 40px;
+  height: 40px; }
+
+.hamburger {
+  top: 0;
+  right: 17px;
+  cursor: pointer;
+  outline: none;
+  width: 40px;
+  height: 40px; }
+
+/* html.mm-opened {
+  overflow-y: scroll;
+}
+.mm-panels > .mm-panel.mm-hasnavbar {
+  right: -18px;
+} */
+.hamburger-inner {
+  background-color: #7cc15a; }
+
+.hamburger-inner::before {
+  background-color: #7cc15a; }
+
+.hamburger-inner::after {
+  background-color: #7cc15a; }
+
+.mm-listview > li > a, .mm-listview > li > span {
+  padding: 14px 10px 14px 50px;
+  font-size: 1rem;
+  color: #ffffff;
+  -webkit-transition: all 1.5s ease;
+  -o-transition: all 1.5s ease;
+  transition: all 1.5s ease; }
+
+.mm-listview > li > a:hover {
+  color: #cccccc; }
 
 /*все переменные и моды */
 .block-pad {
@@ -650,8 +680,15 @@ ul.cd-tabs-navigation {
     padding: 10px 15px; } }
 
 @media only screen and (max-width: 768px) {
+  .header-content {
+    margin-top: 15%;
+    width: 87%; }
   .top-line_menu {
     display: none; }
+  .featured-details a {
+    font-size: 0.87rem; }
+  .featured-details {
+    padding-right: 10px; }
   .top-line_box {
     float: left;
     width: 73%;
@@ -664,7 +701,6 @@ ul.cd-tabs-navigation {
   .mobile_menu {
     width: 40px;
     height: 40px;
-    background-color: red;
     display: block;
     float: right;
     position: fixed;
@@ -673,7 +709,9 @@ ul.cd-tabs-navigation {
     position: absolute;
     width: 200px;
     left: 25%;
-    display: block; } }
+    display: block; }
+  ul.trade_mark_item li {
+    width: 24%; } }
 
 @media only screen and (max-width: 568px) {
   .top-line_box {
@@ -755,8 +793,32 @@ ul.cd-tabs-navigation {
     margin-top: 10px; } }
 
 @media only screen and (max-width: 360px) {
-  .jmjh {
-    color: #000; } }
+  .top-line_buttom a {
+    width: 133px;
+    line-height: 34px;
+    height: 34px; }
+  .mobile_menu {
+    top: 3px; }
+  .header-content h1 {
+    font-size: 1.67rem; }
+  .header-content_buton a {
+    height: 50px;
+    line-height: 50px; }
+  .cd-tabs-navigation a {
+    font-size: 0.90rem; }
+  .tab-box_pic {
+    width: 40%; }
+  .left-box_pic, .left-box_text {
+    float: none; }
+  .left-box_pic {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px; }
+  .left-box_text {
+    width: 100%;
+    padding-left: 0; }
+  .block-right, .block-left {
+    padding: 20px; } }
 
 body {
   font-family: "OpenSansRegular", sans-serif;

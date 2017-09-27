@@ -75,16 +75,6 @@ $win.on("scroll", function () {
     }
   }
 
-
-
-
-
-
-
-
-
-
-
 // mmenu began
 $('#my-menu').mmenu ({
     "pageScroll": true,
@@ -139,7 +129,7 @@ loop:true
 
 
 // pagination on lending pages
-$("#my-menu ul li a").mPageScroll2id({
+$(".top-line_menu ul li a, #my-menu ul li a").mPageScroll2id({
 layout                 : "auto",
 // offset                 : ".top-line",
 scrollEasing           : "linear",

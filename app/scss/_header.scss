@@ -66,12 +66,7 @@ color: #fff;
 text-decoration: none;
 @include font-size(20px);
 }
-.mobile_menu {
-  width: 20px;
-  height: 20px;
-display: none;
 
-}
 .top-line_menu ul {
 list-style-type: none;
 margin-right: 10px;
@@ -134,7 +129,53 @@ text-decoration: none;
 background-color: darken($color-buttom, 10%);
 }
 
-.wrapper {
-width: 1170px;
-margin: 0 auto;
+// .wrapper {
+// width: 1170px;
+// margin: 0 auto;
+// }
+.mobile_menu {
+display: none;
+width: 40px;
+height: 40px;
+
 }
+
+
+
+
+.hamburger {
+
+  top:0;
+right: 17px;
+
+  cursor: pointer;
+  outline: none;
+width: 40px;
+height: 40px; }
+
+/* html.mm-opened {
+  overflow-y: scroll;
+}
+.mm-panels > .mm-panel.mm-hasnavbar {
+  right: -18px;
+} */
+.hamburger-inner {
+  background-color: $green-color-aksent }
+
+.hamburger-inner::before {
+  background-color: $green-color-aksent }
+
+.hamburger-inner::after {
+  background-color: $green-color-aksent }
+
+.mm-listview > li > a, .mm-listview > li > span {
+  padding: 14px 10px 14px 50px;
+  font-size: 1rem;
+  color: #ffffff;
+
+  -webkit-transition: all 1.5s ease;
+  -o-transition: all 1.5s ease;
+  transition: all 1.5s ease; }
+
+.mm-listview > li > a:hover {
+  color: #cccccc; }
