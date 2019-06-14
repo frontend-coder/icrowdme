@@ -233,6 +233,9 @@ h2.block-title {
   text-align: center;
   margin-bottom: 40px; }
 
+h2.block-title span {
+  display: block; }
+
 .block-content {
   margin: 0; }
 
